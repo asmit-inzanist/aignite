@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartScript</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/static/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div id="main">
+        <nav>
+            <div class="left">
+                <img src="/static/images/logo.png" alt="logo">
+                <h1>SmartScript</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="home">Home</li>
+                    <li class="abt">About</li>
+                    <li class="cont">Contact</li>
+                </ul>
+                <img onclick="toggleSubMenu()" src="/static/images/profile.jpg" alt="Profile Pic">
+            </div>
+        </nav>
+        <div id="submenu">
+            <img src="/static/images/profile.jpg" alt="Profile">
+            <h3>Bineet Bairagi</h3>
+            <hr>
+            <div class="det">
+                <h4 onclick="alert(this.innerText)">Metamask ID: <span
+                        class="id">0x6B83EDa0d1A8f38b168386eB422008C03791fa6B</span></h4>
+                <h4>Help & Support</h4>
+                <h4>Logout</h4>
+            </div>
+        </div>
+        <div id="page1">
+            <div data-scroll class="buttons-blockchain">
+                <button class="bcb" data-scroll data-scroll-delay="0.1" data-scroll-speed="-3"
+                    data-scroll-direction="horizontal" onclick="claimReward()"><img src="/static/images/coin-stack.png"
+                        alt="CoinStack"></button>
+                <button class="bcb" data-scroll data-scroll-delay="0.1" data-scroll-speed="-3"
+                    data-scroll-direction="horizontal" onclick="getStreak()"><img src="/static/images/flame.png"
+                        alt="Flame"></button>
+                <button class="bcb" data-scroll data-scroll-delay="0.1" data-scroll-speed="-3"
+                    data-scroll-direction="horizontal" onclick="getRewardBalance()"><img
+                        src="/static/images/gift-blockchain.png" alt="Gift"></button>
+            </div>
+            <h1 class="ss" data-scroll data-scroll-speed="5" data-scroll-direction="vertical">Smart Script</h1>
+            <h2 class="ssh2" data-scroll data-scroll-speed="5" data-scroll-direction="vertical">The Ultimate AI Powered
+                document
+                analysis tool</h2>
+            <p class="ssp" data-scroll data-scroll-speed="5" data-scroll-direction="vertical">Get Instant Solutions.
+                Start uploading
+                now!</p>
+            <button data-scroll data-scroll-speed="3" data-scroll-direction="vertical" class="analysing">Start
+                Analysing</button>
+        </div>
+        <div id="page2">
+            <div class="top">
+                <div data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" class="abt-top-left">
+                    <h1>Unlock the Power of AI<br>Document Analysis</h1>
+                    <p>Our intelligent Document Analyser tool simplifies complex document
+                        reviews by allowing users to upload files and generate tailored insights
+                        through custom prompts. Whether you're extracting key information, summarizing content,
+                        or analyzing data, our tool delivers fast, accurate results—turning static documents into
+                        dynamic answers.
+                    </p>
+                    <button class="started">Get Started</button>
+                </div>
+                <div class="abt-top-right">
+                    <h2>Features</h2>
+                    <div>
+                        <img src="/static/images/gift.png" alt="one">
+                        <h3>Login Reward System</h3>
+                    </div>
+                    <div>
+                        <img src="/static/images/scanner.png" alt="two">
+                        <h3>Optical Card Reader</h3>
+                    </div>
+                    <div>
+                        <img src="/static/images/tts.png" alt="three">
+                        <h3>Text To Speech</h3>
+                    </div>
+                    <div>
+                        <img src="/static/images/brain.png" alt="four">
+                        <h3>Button Wizard</h3>
+                    </div>
+                </div>
+            </div>
+            <div data-scroll data-scroll-speed="2" class="bottom">
+                <h1>Meet Our Team <em>BAD.exe</em></h1>
+                <img src="/static/images/team.png" alt="Team">
+            </div>
+        </div>
+        <div id="page3">
+            <h1>Contact Us</h1>
+            <h2 style="line-height: 8vh;">Any questions or remarks? Just write us a message!</h2>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-head">
+                        <h2 style="font-size: 2.5vw;">Contact Information</h2>
+                        <p style="line-height: 5vh; letter-spacing: 0; font-size: 1.2vw;">Say something to start a live
+                            chat!</p>
+                    </div>
+                    <div class="contact-middle">
+                        <div class="call">
+                            <img src="/static/images/phone.png" alt="">
+                            <p>+91 7439063850</p>
+                        </div>
+                        <div class="email">
+                            <img src="/static/images/mail.png" alt="">
+                            <p>smartscript3@gmail.com</p>
+                        </div>
+                        <div class="address">
+                            <img src="/static/images/address.png" alt="">
+                            <p>DN-20, Sector V, Bidhannagar, Kolkata</p>
+                        </div>
+                    </div>
+                    <div class="contact-below">
+                        <a href=""><img src="/static/images/twitter.png" alt=""></a>
+                        <a href=""><img src="/static/images/ign.png" alt=""></a>
+                        <a href=""><img src="/static/images/dc.png" alt=""></a>
+                    </div>
+                    <img class="e1" src="/static/images/ellipse 1.png" alt="Ellipse1">
+                    <img class="e2" src="/static/images/ellipse 2.png" alt="">
+                </div>
+                <div class="contact-right">
+                    <img src="/static/images/sendletter.png" alt="">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="cc9d1cf9-bea3-41f3-aa35-f5d82708defc">
+
+                        <input class="inp" type="text" name="name" placeholder="First Name" required>
+                        <input class="inp" type="text" name="name" placeholder="Last Name" required>
+                        <input class="inp" type="email" name="email" placeholder="Email" required>
+                        <input class="inp" type="text" name="Phone Number" placeholder="Phone Number" required>
+                        <textarea class="msg" placeholder="Enter your message" name="message" required></textarea>
+
+
+                        <button type="submit">Submit Form</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="analyser">
+            <div class="content">
+                <div class="content-left">
+                    <div class="upload-box" id="drop-area">
+                        <img src="/static/images/file.png" alt="File">
+                        <p>Upload files or <span style="color: #fe9347;">drag & drop</span></p>
+                        <input type="file" id="fileInput" multiple>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" id="userInput" placeholder="Type your prompt..." />
+                        <button onclick="processFile('custom')" type="button"><img src="/static/images/send.png"
+                                alt=""></button>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div id="output"></div>
+                    <hr>
+                    <button id="speechToggle" onclick="toggleSpeech()"><img src="/static/images/play.png"
+                            alt="Play/Pause"><em>/</em><img src="/static/images/pause.png" alt="Play/Pause"></button>
+                    <button style="left: 30%; bottom: 0%;" id="stopSpeech" onclick="stopSpeech()">🔴 Stop</button>
+
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="processFile('topics')">Explore Topics</button>
+                <button onclick="processFile('quiz')">Generate Question</button>
+                <button onclick="processFile('formulas')">Collect Formulas</button>
+                <button onclick="processFile('ocr')">OCR</button>
+            </div>
+        </div>
+        <div id="page4">
+        </div>
+        <footer>
+            <div class="footer-logo">
+                <img src="/static/images/logo.png" alt="logo">
+                <p>© 2025 SmartScript, Inc.<br>All Rights Reserved.</p>
+            </div>
+            <div class="links">
+                <a href="">Quick Links</a>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Products</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="links">
+                <a href="">Our Solutions</a>
+                <a href="">Green Advantage</a>
+                <a href="">Red Advantage</a>
+                <a href="">Yellow Advantage</a>
+                <a href="">Comprehensive Solutions</a>
+            </div>
+            <div class="links">
+                <a href="">Connect with us</a>
+                <a href="">LinkedIn</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

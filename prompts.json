@@ -1,0 +1,6 @@
+{
+    "quiz": "Make a short quiz out of the image along with their answers including short explanation and formulas",
+    "topics": "List out the topics in the image and write one-line descriptions for them . After completing, provide study material websites for reference for the listed topics.and keep in mind to nicely optimize the response as this is also for visually impaired people to help them unterstand the document properly ",
+    "formulas": "List out only the formulas in the image without any explanation or any description",
+    "ocr":"using optical character recognition capability convert the handwritten text into normal text and try to be as accurate as possible  "
+}
